@@ -14,6 +14,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
 
+//	Change the project name in the url:
+//	Go to project preferences and select the "Web Pjt Settings" ====> edit the context root(What u like)
+//	clean the server things
 	@Bean
 	public ViewResolver getViewResolver(){
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
