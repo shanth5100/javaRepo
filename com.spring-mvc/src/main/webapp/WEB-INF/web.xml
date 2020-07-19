@@ -24,7 +24,7 @@
 		</init-param>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>com.spring_mvc.com.spring_mvc</param-value>
+			<param-value>com.mvc.pjt</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>

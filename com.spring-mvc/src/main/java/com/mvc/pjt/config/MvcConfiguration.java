@@ -1,4 +1,4 @@
-package com.spring_mvc.com.spring_mvc.config;
+package com.mvc.pjt.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages="com.spring_mvc.com.spring_mvc")
+@ComponentScan(basePackages="com.mvc.pjt")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter{
 

@@ -1,4 +1,5 @@
-package com.spring_mvc.com.spring_mvc.controller;
+//package com.spring_mvc.com.spring_mvc.controller;
+package com.mvc.pjt.controller;
 
 import java.io.IOException;
 
