@@ -1,0 +1,16 @@
+server:
+  port: 5009
+  
+spring:
+  application:
+    name: eureka-client-resouce_mapping-service
+    
+eureka:
+  instance:
+    hostname: localhost
+    
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:5007/eureka      
