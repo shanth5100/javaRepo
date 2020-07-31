@@ -1,0 +1,28 @@
+server:
+  port: 5008
+  
+spring:
+  application:
+    name: eureka-client-service1
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://db4free.net:3306/appdev
+    username: appdev
+    password: qwiqapp124
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimum-idle: 10
+      idle-timeout: 10000
+      maximum-pool-size: 30
+
+eureka:
+  instance:
+    hostname: localhost
+    
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:5007/eureka      
