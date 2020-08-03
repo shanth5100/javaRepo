@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: eureka-client-service1
+  main:
+    web-application-type: none
   jpa:
     hibernate:
       ddl-auto: update
@@ -19,10 +21,10 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
-    
+    hostname: localhost    
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:5007/eureka      
+      defaultZone: ${http://localhost:5007/eureka}
+    eureka-server-port: 5007

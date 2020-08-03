@@ -1,17 +1,17 @@
-package com.eureka.client;
+package com.zuul.api.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableDiscoveryClient
+@EnableZuulProxy
 @EnableEurekaClient
 @SpringBootConfiguration
-public class EurekaClientService1 {
+public class TestZuulAPIGateway {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaClientService1.class, args);
+		SpringApplication.run(TestZuulAPIGateway.class, args);
 	}
 
 }
